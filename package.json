@@ -1,7 +1,7 @@
 {
   "name": "typescript_design_pattern",
   "version": "1.0.0",
-  "description": "",
+  "description": "Arquivos das aulas do módulo 'TypeScript - Design Patterns - Padrões de projeto - GOF' do curso de JavaScript e TypeScript da Udemy.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,6 +18,13 @@
   },
   "homepage": "https://github.com/Henrique1204/TypeScript-Design-Pattern#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2",
+    "ts-node": "^10.0.0",
     "typescript": "^4.3.4"
   }
 }

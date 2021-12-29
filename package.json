@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Henrique1204/TypeScript-Design-Pattern#readme",
   "devDependencies": {
+    "@types/node": "^17.0.5",
     "@types/validator": "^13.7.0",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",

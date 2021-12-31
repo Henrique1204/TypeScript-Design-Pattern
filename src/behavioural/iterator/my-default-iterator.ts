@@ -1,0 +1,27 @@
+import MyDataStructure from './my-data-structure';
+import MyIteratorProtocol from './my-iterator-protocol';
+
+class MyDefaultIterator implements MyIteratorProtocol<string> {
+  private index = 0;
+
+  constructor(private readonly dataStructure: MyDataStructure) {}
+
+  private makeValue(value: string): IteratorResult<string> {
+    return { value, done: false };
+  }
+
+  public next(): IteratorResult<string> {
+    const returnValue = this.makeValue(this.dataStructure.items[this.index]);
+    returnValue.done = this.index >= this.dataStructure.size();
+
+    this.index++;
+
+    return returnValue;
+  }
+
+  public reset(): void {
+    this.index = 0;
+  }
+}
+
+export default MyDefaultIterator;
